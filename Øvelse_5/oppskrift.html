@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-devcie-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Assets/CSS/style.css">
+        <title>Oppskrift</title>
+        <style>
+                    /* Reset for marginer og padding */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            /* Body-stiler */
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.7;
+                background-color: #f0f0f5;
+                color: #333;
+                padding: 20px;
+            }
+
+            /* Container for hovedinnhold */
+            main {
+                max-width: 900px;
+                margin: 0 auto;
+                background: #ffffff;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 40px;
+                margin-bottom: 60px;
+            }
+
+            /* Stil for overskrifter */
+            h2 {
+                color: #34495e;
+                font-size: 2.2em;
+                text-align: center;
+                margin-bottom: 20px;
+                border-bottom: 2px solid #e67e22;
+                padding-bottom: 10px;
+            }
+
+            /* Stil for avsnitt */
+            p {
+                font-size: 18px;
+                color: #555;
+                text-align: justify;
+                margin-bottom: 30px;
+            }
+
+            /* Stil for bilder */
+            figure {
+                text-align: center;
+                margin: 30px 0;
+            }
+
+            figure img {
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+                border-radius: 10px;
+                transition: transform 0.3s ease;
+            }
+
+            figure img:hover {
+                transform: scale(1.05);
+            }
+
+            figcaption {
+                font-size: 14px;
+                color: #888;
+                margin-top: 10px;
+            }
+
+            /* Stil for ingrediensseksjonen */
+            #Ingredienser ul {
+                list-style-type: circle;
+                padding-left: 20px;
+            }
+
+            #Ingredienser ul li {
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: #34495e;
+                transition: color 0.3s ease;
+            }
+
+            #Ingredienser ul li:hover {
+                color: #e67e22;
+            }
+
+            /* Stil for fremgangsmåte */
+            #Fremgangsmåte ol {
+                padding-left: 20px;
+                counter-reset: step-counter;
+            }
+
+            #Fremgangsmåte ol li {
+                font-size: 18px;
+                margin-bottom: 20px;
+                color: #34495e;
+                position: relative;
+                padding-left: 30px;
+            }
+
+            #Fremgangsmåte ol li::before {
+                counter-increment: step-counter;
+                content: counter(step-counter) ". ";
+                position: absolute;
+                left: 0;
+                color: #e67e22;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            /* Footer stil */
+            footer {
+                text-align: center;
+                background-color: #34495e;
+                color: #ffffff;
+                padding: 20px 0;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+
+            footer p {
+                font-size: 14px;
+            }
+
+            /* Responsiv design */
+            @media (max-width: 768px) {
+                main {
+                    padding: 20px;
+                }
+
+                h2 {
+                    font-size: 1.8em;
+                }
+
+                p, ul li, ol li {
+                    font-size: 16px;
+                }
+
+                figure img {
+                    width: 100%;
+                }
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <section>
+                
+                <h2>Oppskrift for øvre ørrettslig støtte</h2>
+                <p>
+                    Denne ingefærshoten ser full av hot energi og gir
+                    deg en skikkelig kickstart på dagen!
+                    Lag like godt en dobbel porsjon når du først er i gang -
+                    den holder seg godt i kjøleskapet.
+                </p>
+                <figure>
+                    <img src="https://cdn-yams.godt.no/api/v1/godt-recipe/images/18/18a2bcc1-e624-4434-9744-1a17b749503b?rule=w1600_auto"
+                            width="200vh" height="150vh">
+                    <figcaption>Fig.1 - avatar Lise Finckenhagen</figcaption>
+                </figure>
+                <section id="Ingredienser">
+                <h2>Ingredienser</h2>
+                <ul>
+                    <li>50 g rakfisk, uten skinn og ben</li>
+                    <li>0.06 dl fløte</li>
+                    <li>18.75 g smør, usaltet</li>
+                    <li>0.25 ss sjalottløk, finhakket</li>
+                    <li>0.38 ss gressløk</li>
+                    <li>0.5 ss rødbeter, hakket eller strimlet</li>
+                    <li>salt</li>
+                    <li>pepper, kvernet</li>
+                </ul>
+                </section>
+
+                <section id="Fremgangsmåte">
+                    <h2>Fremgangsmåte</h2>
+                   
+                        <ol>
+                            <li>arm ovnen til 210 grader.
+                                 Ha sjalottløken i en liten kasserolle, tilsett fløten og kok opp.
+                                 Visp inn 3-4 smørterninger. Når smøret har jevnet seg med fløten
+                                 tilsetter du 3-4 smørterninger til mens du hele tiden visper.
+                                 Fortsett slik til du har vispet inn alt smøret og sausen har fått en fyldig konsistens.
+                                 Smak sausen til med salt og pepper og ha i gressløk.</li><br>
+                            
+                            <li>Hold sausen varm, men pass på så den ikke koker da kan den skille seg.
+                                 Skjær fisken i fire jevne stykker og legg dem på et smurt stekebrett el.l.
+                                 Varm rakfisken et par minutter i ovnen og server med smørsaus og rødbet.</li>
+                        </ol>
+                </section>
+            </section>
+        </main>
+        <footer>
+            Ansv. redaktør og adm. direktør: Gard Steiro
+        </footer>
+    </body>
+</html>

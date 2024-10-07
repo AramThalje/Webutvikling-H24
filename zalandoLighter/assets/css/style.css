@@ -1,29 +1,98 @@
-#logo { 
-    width: 200px;
-    height: 100px;
-    margin-right: 20px;
-    float: left;
-    display: block;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+html{
+    font-size: 18px;
 }
-#card{
-    width: 400px;
-    height: 400px;
-    float: right;
-    display: block;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+*{
+   box-sizing: border-box; 
 }
+header{
+    padding: 2rem;
+}
+
+body {
+    
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#main-logo{
+    width: 100%;
+    max-width: 250px;
+    margin: 0pc auto;
+    display: block;
+    
+
+}
+
 img{
     width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 10px;
+    max-width: 250px;
+
+}
+
+.produkt-card{
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 10px  10px 10px 10px sans-serif;
+    border: 1px dotted #000;
+    padding: 1rem;
+}
+
+.flex-menu{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    
+}
+
+.flex-menu a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+.flex-space-b{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+.flex-space-b h2{
+    width: 100%;
+}
+
+.flex-space-b form {
+    position: relative;
+}
+
+.flex-space-b form label{
+    visibility: hidden;
+    position: absolute;
+}
+form{
+    position: relative;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul a{
+    text-decoration: none;
+    color: #333;   
+}
+
+#outlet{
+    color: #ff0000;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
 }
