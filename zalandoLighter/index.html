@@ -4,76 +4,156 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Zalando Light | Forside</title>
-        <link rel="stylesheet" href="../zalandoLighter/assets/css/style.css">
+        <link href="assets/fontawesome-free-6.6.0-web/css/fontawesome.css" rel="stylesheet" />
+        <link href="assets/fontawesome-free-6.6.0-web/css/brands.css" rel="stylesheet" />
+        <link href="assets/fontawesome-free-6.6.0-web/css/solid.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-        <header>
-            <img src="../zalandoLighter/assets/imges/zalando-2-logo.png" alt="Nettsted logo" id="main-logo">
-            <nav class="flex-space-b">
-                <ul class="flex-menu">
-                    <li><a href="#">Nyheter</a></li>
-                    <li><a href="#">Nordisk still</a></li>
-                    <li><a href="#">Klær</a></li>
-                    <li><a href="#">Sko</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Streetwear</a></li>
-                    <li><a href="#">Sport</a></li>
-                    <li><a href="#">Designer</a></li>
-                    <li><a href="#">Outlet</a></li>
-                    
-                </ul>
-                <form>
-                    <label for="search">Søk</label>
-                    <input type="search" placeholder="Her kan du døke etter produkter..." id="search">
-                    <input type="submit" value="søk"> 
-                </form>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <h2>Vår best deals</h2>
-                <a href="#">Shop nå -></a>
-                <img src="../zalandoLighter/assets/imges/953abf50d6784f0391dca58bd3b1a0fe.webp" alt="Våre beste deals">
-            </section>
-            <section class="flex-space-b">
-                <h2>Produkter</h2>
-                <article class="produkt-card">
-                    <img src="../zalandoLighter/assets/imges/8a1d938f0de24428858356669e4ec5be.webp" alt="Adidas Orginals handel spezial">
-                    <h3>Produktnavn</h3>
-                    <a href="#">adidas Orginals</a>
-                    <p>Beskrivelse av produkt</p>
-                    
-                    <p>1229 kr</p>
-                </article>
-                <article class="produkt-card">
-                    <img src="../zalandoLighter/assets/imges/953abf50d6784f0391dca58bd3b1a0fe.webp" alt="Adidas Orginals handel spezial">
-                    <h3>Produktnavn</h3>
-                    <a href="#">adidas Orginals</a>
-                    <p>Beskrivelse av produkt</p>
-                    
-                    <p>1229 kr</p>
-                </article>
-                <article class="produkt-card">
-                    <img src="../zalandoLighter/assets/imges/953abf50d6784f0391dca58bd3b1a0fe.webp" alt="Adidas Orginals handel spezial">
-                    <h3>Produktnavn</h3>
-                    <a href="#">adidas Orginals</a>
-                    <p>Beskrivelse av produkt</p>
-                    
-                    <p>1229 kr</p>
-                </article>
-                <article class="produkt-card">
-                    <img src="../zalandoLighter/assets/imges/953abf50d6784f0391dca58bd3b1a0fe.webp" alt="Adidas Orginals handel spezial">
-                    <h3>Produktnavn</h3>
-                    <a href="#">adidas Orginals</a>
-                    <p>Beskrivelse av produkt</p>
-                    
-                    <p>1229 kr</p>
-                </article>
-              
+        
+        <div id="grid-container">
+            <header id="global-header">
+                <img src="assets/imges/Zalando-Logo.png" alt="Nettsted logo" id="main-logo">
+                <nav class="flex-space-b">
+                    <i class="fa-solid fa-burger" onclick="toggleMenu"></i>
+                    <ul class="flex-menu" id="menu">
+                        <li><a href="#">Nyheter</a></li>
+                        <li><a href="#">Nordisk still</a></li>
+                        <li><a href="#">Klær</a></li>
+                        <li><a href="sko.html">Sko</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Streetwear</a></li>
+                        <li><a href="#">Sport</a></li>
+                        <li><a href="#">Designer</a></li>
+                        <li><a href="#">Outlet</a></li>
+                        
+                    </ul>
+                    <form>
+                        <label for="search">Søk</label>
+                        <input type="search" placeholder="Her kan du døke etter produkter..." id="search">
+                        <input type="submit" value="søk"> 
+                    </form>
+                </nav>
+            </header>
+            <main>
+                <section id="banner">
+                    <div>
+                        <h2>Vår best deals</h2>
+                        <a href="#">Shop nå -></a>
+                    </div>
+                    <img src="assets/imges/powerup.webp" alt="Våre beste deals">
+                </section>
+                <section class="flex-space-b">
+                    <h2>Produkter</h2>
+                    <article class="product-card">
+                        <picture>
+                            <source media="(max-width:400px)" srcset="assets/imges/sko/produktbilde200x288">
+                            <source media="(max-width:800px)" srcset="assets/image/sko/produktbilde400x576">
+                            <img src="assets/imges/sko/produktbilde800x1151.jpg" alt="Adidas Orginals handel spezial" ">
+                        </picture>
+                        
+                        <h3>Produktnavn</h3>
+                        <a href="#">adidas Orginals</a>
+                        <p>Beskrivelse av produkt</p>
+                        
+                        <p>1229 kr</p>
+                    </article>
+                    <article class="product-card">
+                        <picture>
+                            <source media="(max-width:400px)" srcset="assets/imges/sko/produktbilde200x288.jpg">
+                            <source media="(max-width:800px)" srcset="assets/imges/sko/produktbilde400x576.jpg">
+                            <img src="assets/imges/sko/produktbilde800x1151.jpg" alt="Adidas Orginals handel spezial">
+                            
+                        </picture>
+                        <h3>Produktnavn</h3>
+                        <a href="#">adidas Orginals</a>
+                        <p>Beskrivelse av produkt</p>
+                        
+                        <p>1229 kr</p>
+                    </article>
+                    <article class="product-card">
+                        <picture>
+                            <source media="(max-width:400px)" srcset="assets/imges/sko/produktbilde200x288.jpg">
+                            <source media="(max-width:800px)" srcset="assets/imges/sko/produktbilde400x576.jpg">
+                            <img src="assets/imges/sko/produktbilde800x1151.jpg" alt="Adidas Orginals handel spezial">
+                        </picture>
+                        <h3>Produktnavn</h3>
+                        <a href="#">adidas Orginals</a>
+                        <p>Beskrivelse av produkt</p>
+                        
+                        <p>1229 kr</p>
+                    </article>
+                    <article class="product-card">
+                        <picture>
+                            <source media="(max-width:400px)" srcset="assets/imges/sko/produktbilde200x288.jpg">
+                            <source media="(max-width:800px)" srcset="assets/imges/sko/produktbilde400x576.jpg">
+                            <img src="assets/imges/sko/produktbilde800x1151.jpg" alt="Adidas Orginals handel spezial">
+                        </picture>
+                        <h3>Produktnavn</h3>
+                        <a href="#">adidas Orginals</a>
+                        <p>Beskrivelse av produkt</p>
+                        
+                        <p>1229 kr</p>
+                    </article>
                 
-            </section>
+                    <article class="product-card">
+                        <picture>
+                            <source media="(max-width:400px)" srcset="assets/imges/sko/produktbilde200x288.jpg">
+                            <source media="(max-width:800px)" srcset="assets/imges/sko/produktbilde400x576.jpg">
+                            <img src="assets/imges/sko/produktbilde800x1151.jpg" alt="Adidas Orginals handel spezial">
+                        </picture>
+                        <h3>Produktnavn</h3>
+                        <a href="#">adidas Originals</a>
+                        <a href="#"><h3>Handbal Spezial</h3></a>
+                        <p>1299 kr</p>
+                    </article>
+                    <article class="product-card">
+                        <picture>
+                            <source media="(max-width:400px)" srcset="assets/imges/sko/produktbilde200x288.jpg">
+                            <source media="(max-width:800px)" srcset="assets/imges/sko/produktbilde400x576.jpg">
+                            <img src="assets/imges/sko/produktbilde800x1151.jpg" alt="Adidas Orginals handel spezial">
+                        </picture>
+                        <h3>Produktnavn</h3>
+                        <a href="#">adidas Originals</a>
+                        <a href="#"><h3>Handbal Spezial</h3></a>
+                        <p>1299 kr</p>
+                    </article>
+                    <article class="product-card">
+                        <picture>
+                            <source media="(max-width:400px)" srcset="assets/imges/sko/produktbilde200x288.jpg">
+                            <source media="(max-width:800px)" srcset="assets/imges/sko/produktbilde400x576.jpg">
+                            <img src="assets/imges/sko/produktbilde800x1151.jpg" alt="Adidas Orginals handel spezial">
+                        </picture>
+                        <h3>Produktnavn</h3>
+                        <a href="#">adidas Originals</a>
+                        <a href="#"><h3>Handbal Spezial</h3></a>
+                        <p>1299 kr</p>
+                    </article>
+                    <article class="product-card">
+                        <picture>
+                            <source media="(max-width:400px)" srcset="assets/imges/sko/produktbilde200x288.jpg">
+                            <source media="(max-width:800px)" srcset="assets/imges/sko/produktbilde400x576.jpg">
+                            <img src="assets/imges/sko/produktbilde800x1151.jpg" alt="Adidas Orginals handel spezial">
+                        </picture>
+                        <h3>Produktnavn</h3>
+                        <a href="#">adidas Originals</a>
+                        <a href="#"><h3>Handbal Spezial</h3></a>
+                        <p>1299 kr</p>
+                    </article>
+                </section>
 
-        </main>
-        <footer>&copy; Zalando Light 2024</footer>
+            </main>
+            <!--<footer>&copy; Zalando Light 2024</footer>-->
+        </div>
+        <script>
+        let toggleMenu = ()=>{
+            let x = document.getElementById("menu")
+            if(x.style.display === "flex"){
+                x.style.display = "none";
+            }else{
+                x.style.display = "flex";
+        }
+}
+        </script>
     </body>
 </html>
